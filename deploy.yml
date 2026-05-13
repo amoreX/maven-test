@@ -1,7 +1,7 @@
 ---
 -name:copyshi
-  hosts:local
-  gather_focus:no
+  hosts: local
+  gather_facts: no
 
   tasks:
     - name:copyover
