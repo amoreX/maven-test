@@ -1,10 +1,10 @@
 ---
--name:copyshi
-  hosts: local
-  gather_facts: no
+  - name: Deploy Maven artifact locally
+    hosts: localhost
+    gather_facts: no
 
-  tasks:
-    - name:copyover
-      copy:
-        src: "target/mymavenapp-1.0-SNAPSHOT.jar"
-        dest: "/Users/nihal/code/labte/t.jar"
+    tasks:
+      - name: Copy JAR to target location
+        copy:
+          src: "target/mavenapp-1.0-SNAPSHOT.jar"
+          dest: "/Users/nihal/code/labte/t.jar"
