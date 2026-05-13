@@ -1,0 +1,10 @@
+---
+-name:copyshi
+  hosts:local
+  gather_focus:no
+
+  tasks:
+    - name:copyover
+      copy:
+        src: "target/mymavenapp-1.0-SNAPSHOT.jar"
+        dest: "/Users/nihal/code/labte/t.jar"
